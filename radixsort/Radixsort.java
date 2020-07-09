@@ -5,6 +5,7 @@ import countingsort.CountingSort;
 public class Radixsort {
   CountingSort cs = new CountingSort();
 
+  // obtém o maior elemento do array
   int getMax(int data[], int len) {
     int maxValue = data[0];
     for (int idx = 1; idx < len; idx++) {
@@ -14,6 +15,7 @@ public class Radixsort {
     return maxValue;
   }
 
+  // radixSort algorithm
   public void radixSort(int data[], int len) {
     int maxValue = getMax(data, len);
     for (int place = 1; maxValue / place > 0; place *= 10) {
