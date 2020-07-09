@@ -1,31 +1,36 @@
 package countingsort;
 
-public class CountingSort {
-  public void countingSort(int array[], int len, int place) {
-    int[] output = new int[len + 1];
-    int max = array[0];
+import java.util.Arrays;
 
-    for (int i = 0; i < len; i++) {
-      if (array[i] > max)
-        max = array[i];
-    }
-    int[] count = new int[max + 1];
+public class CountingSort {
+  public void countingSort(int data[], int len, int place, int max) {
+    int[] output = new int[len + 1]; // tamanho do array mais 1
+
+    int[] count = new int[max + 1]; // aloca memória para o tamanho do maior elemento
 
     for (int i = 0; i < max; ++i)
-      count[i] = 0;
+      count[i] = 0; // preenche o array do tamanho de maior elemento com zeros
 
     for (int i = 0; i < len; i++)
-      count[(array[i] / place) % 10]++;
+      count[(data[i] / place) % 10]++; // coloca 1 de 0 a 9 a cada duas posições do array count
 
     for (int i = 1; i < 10; i++)
-      count[i] += count[i - 1];
+      count[i] += count[i - 1]; // conta alguma coisa de 0 a 9 para auxiliar o for abaixo de inserção no output
 
     for (int i = len - 1; i >= 0; i--) {
-      output[count[(array[i] / place) % 10] - 1] = array[i];
-      count[(array[i] / place) % 10]--;
+      /*
+       * na posição 9 de count: 19/1%10-1=8 que tem valor 3, adiciona 19 na posição 2
+       * de output
+       */
+      output[count[(data[i] / place) % 10] - 1] = data[i];
+      count[(data[i] / place) % 10]--; // decrementa a posição do array count que vai de 0 a 9 até n elementos
     }
 
-    for (int i = 0; i < len; i++)
-      array[i] = output[i];
+    // System.out.println("Situação atual:");
+    for (int i = 0; i < len; i++) {
+      data[i] = output[i];
+    }
+    // System.out.println("[" + i + "]" + " " + data[i]);
+    // System.out.println("Situação final: " + Arrays.toString(data) + "\n");
   }
 }

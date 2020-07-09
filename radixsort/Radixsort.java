@@ -5,17 +5,19 @@ import countingsort.CountingSort;
 public class Radixsort {
   CountingSort cs = new CountingSort();
 
-  int getMax(int array[], int n) {
-    int max = array[0];
-    for (int i = 1; i < n; i++)
-      if (array[i] > max)
-        max = array[i];
-    return max;
+  int getMax(int data[], int len) {
+    int maxValue = data[0];
+    for (int idx = 1; idx < len; idx++) {
+      if (data[idx] > maxValue)
+        maxValue = data[idx];
+    }
+    return maxValue;
   }
 
-  public void radixSort(int array[], int len) {
-    int max = getMax(array, len);
-    for (int place = 1; max / place > 0; place *= 10)
-      cs.countingSort(array, len, place);
+  public void radixSort(int data[], int len) {
+    int maxValue = getMax(data, len);
+    for (int place = 1; maxValue / place > 0; place *= 10) {
+      this.cs.countingSort(data, len, place, maxValue);
+    }
   }
 }
