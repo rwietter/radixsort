@@ -4,7 +4,6 @@ export default class CountingSort {
   private arr: number[];
   private len: number;
   private max: number;
-  private newArraySorted: number[] = [];
 
   constructor(arr: number[], len: number, max: number) {
     this.arr = arr;
@@ -37,8 +36,8 @@ export default class CountingSort {
     }
 
     for (let i = 0; i < this.len; i++) {
-      this.newArraySorted[i] = output[i];
+      this.arr[i] = output[i];
     }
-    return this.newArraySorted;
+    return this.arr;
   }
 }
