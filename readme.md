@@ -17,6 +17,7 @@
 <p align="center">
   <img src="./assets/gif/radix.gif">
 </p>
+
 [Animação USFCA](https://www.cs.usfca.edu/~galles/visualization/RadixSort.html)
 
 
