@@ -13,9 +13,9 @@
 <br/>
 <hr/>
 
-### [Radix em Java](https://github.com/rwietter/radixsort/tree/master/src)
-### [Radix em JavaScrit](https://github.com/rwietter/radixsort/tree/master/javascript)
-### [Radix em TypeScript](https://github.com/rwietter/radixsort/tree/master/typescript)
+#### [Radix em Java](https://github.com/rwietter/radixsort/tree/master/src)
+#### [Radix em JavaScrit](https://github.com/rwietter/radixsort/tree/master/javascript)
+#### [Radix em TypeScript](https://github.com/rwietter/radixsort/tree/master/typescript)
 
 <hr/>
 
