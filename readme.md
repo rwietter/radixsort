@@ -2,7 +2,21 @@
   <bold>Radix Sort</bold>
 </h1>
 
+<h3 align="center"> 📄 🚀 </h3>
+
 <br/>
+
+<p align="center">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/rwietter/radixsort" />
+
+  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/rwietter/radixsort" />
+
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/rwietter/radixsort" />
+
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/rwietter/radixsort" />
+
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen" />
+</p>
 
 <br/>
 <hr/>
