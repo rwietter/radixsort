@@ -1,5 +1,6 @@
-import radixsort.Radixsort;
+package src;
 
+import src.radixsort.Radixsort;
 import java.util.Arrays;
 
 public class App {

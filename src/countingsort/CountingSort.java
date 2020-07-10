@@ -1,4 +1,4 @@
-package countingsort;
+package src.countingsort;
 
 public class CountingSort {
   public void countingSort(int data[], int len, int place, int max) {

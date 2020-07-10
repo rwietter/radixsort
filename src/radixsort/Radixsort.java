@@ -1,6 +1,6 @@
-package radixsort;
+package src.radixsort;
 
-import countingsort.CountingSort;
+import src.countingsort.CountingSort;
 
 public class Radixsort {
   CountingSort cs = new CountingSort();
