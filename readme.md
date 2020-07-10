@@ -1,6 +1,6 @@
-<p align="center">
+<h1 align="center">
   <bold>Radix Sort</bold>
-</p>
+</h1>
 
 <br/>
 
@@ -17,19 +17,51 @@
 <p align="center">
   <img src="./assets/gif/radix.gif">
 </p>
+[Animação USFCA](https://www.cs.usfca.edu/~galles/visualization/RadixSort.html)
 
-<p align="center">
-  <bold>Animação <a href="httbolds://www.cs.usfca.edu/~galles/visualization/RadixSort.html">USFCA</a></bold>
-</p>
 
 <br/>
 <br/>
+<hr/>
+
+<h3> ☑️ Como utilizar </h3>
+
+Instale o [Git](https://git-scm.com/downloads), o [Visual Studio Code](https://code.visualstudio.com/), o [NodeJS^12.16.1 ou superior](https://nodejs.org/en/), o [Yarn^1.22.4](https://yarnpkg.com/) e o [Deno^1.0.0 ou superior](https://deno.land/)
+
+```shell
+# Clone este repositório
+git clone https://github.com/rwietter/radixsort.git
+
+# Entre no diretório
+cd radixsort
+
+# Instale as dependências
+yarn install
+
+# Inicie com JavaScrit
+node .\javascript\app.js
+
+# Inicie com TypeScript
+deno run .\typescript\App.ts
+
+# Testes unitários
+yarn test
+
+```
 
 <hr/>
 
-<p align="center">
-  LICENSE <a href="./LICENSE">
-</p>
+### 🌐 Como contribuir
+- Faça um fork deste repositório;
+- Crie uma branch com a sua feature: `git checkout -b my-feature`
+- Faça um commit das suas mudanças: `git commit -m 'feat: My new feature'`
+- De push na sua branch: `git push origin my-feature`
+
+<hr/>
+
+### 📝 Licença
+
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 <hr/>
 
