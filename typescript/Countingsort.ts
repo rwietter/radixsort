@@ -1,5 +1,3 @@
-import App from "./App.ts";
-
 export default class CountingSort {
   private arr: number[];
   private len: number;

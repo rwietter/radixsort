@@ -2,32 +2,41 @@ import Radixsort from "./Radixsort.ts";
 import MaxValue from "./MaxValue.ts";
 
 export default class App {
-  private unsortedArray: number[] = [55, 3, 77, 4, 4, 2, 55, 0, 1, 3, 46, 7, 8];
-  private length: number = this.unsortedArray.length;
+  private array: number[] = [55, 3, 77, 4, 4, 2, 55, 0, 1, 3, 46, 7, 8];
+  private length: number = this.array.length;
   private maxValueArray: number = 0;
 
-  getMaxValue() {
+  getMaxValue(unsortedArray: number[]) {
     const maxValue = new MaxValue();
-    this.maxValueArray = maxValue.getMaxValue(this.unsortedArray, this.length);
+    this.maxValueArray = maxValue.getMaxValue(unsortedArray);
+    return this.maxValueArray
   }
 
   radixSort() {
     if (!this.maxValueArray) return;
     const rdx = new Radixsort(
-      this.unsortedArray,
+      this.array,
       this.length,
       this.maxValueArray,
     );
     rdx.radixSort();
-    rdx.getArraySorted();
   }
 
   getArraySorted() {
-    console.log(this.unsortedArray);
+    console.log(this.array);
+  }
+
+  getArrayUnsorted() {
+    return this.array;
+  }
+
+  printArray() {
+    console.log(this.array);
   }
 }
 
 const app = new App();
 
-app.getMaxValue();
+app.getMaxValue(app.getArrayUnsorted());
 app.radixSort();
+app.printArray();

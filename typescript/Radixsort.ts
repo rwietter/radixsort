@@ -20,9 +20,6 @@ export default class RadixSort {
     for (place; Math.trunc(this.max / place) > 0; place *= 10) {
       this.newArraySorted = cs.countingSort(place);
     }
-  }
-
-  getArraySorted() {
-    console.log(this.newArraySorted);
+    return this.newArraySorted;
   }
 }
