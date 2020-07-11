@@ -1,7 +1,9 @@
 package src.countingsort;
 
 public class CountingSort {
+
   public void countingSort(int data[], int len, int place, int max) {
+
     int[] output = new int[len + 1]; // tamanho do array mais 1
 
     int[] count = new int[max + 1]; // aloca memória para o tamanho do maior elemento
@@ -20,6 +22,10 @@ public class CountingSort {
       count[(data[i] / place) % 10]--; // decrementa a posição do array count que vai de 0 a 9 até n elementos
     }
 
+    /**
+     * update data sort
+     * 
+     */
     for (int i = 0; i < len; i++) {
       data[i] = output[i];
     }
