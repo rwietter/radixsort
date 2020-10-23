@@ -1,7 +1,7 @@
 export default class MaxValue {
-  public getMaxValue(unsortedArray: number[]) {
-    let value = unsortedArray[0];
-    unsortedArray.filter((item) => item > value ? value = item : null);
+  public getMaxNumber(number: number[]) {
+    let value = number[0];
+    number.filter((item) => item > value ? value = item : null);
     return value;
   }
 }

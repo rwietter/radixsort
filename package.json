@@ -6,13 +6,15 @@
   "author": "Maurício Witter <mwitter@protonmail.com>",
   "license": "MIT",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "dev": "ts-node-dev --transpile-only --ignore-watch node_modules typescript/App.ts --watch"
   },
   "devDependencies": {
     "@types/jest": "^26.0.4",
     "jest": "^26.1.0",
     "ts-jest": "^26.1.1",
     "ts-loader": "^8.0.0",
+    "ts-node-dev": "^1.0.0",
     "typescript": "^3.9.6"
   }
 }
