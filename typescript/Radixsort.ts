@@ -1,21 +1,15 @@
-import CountingSort from './Countingsort';
-
 interface ICountingSort {
   countingSort(arr: number[], len: number, max: number, place: number): number[];
 }
 
 export default class RadixSort {
-  private arr: number[];
-  private len: number;
-  private max: number;
-  private sort: number[];
+  private arr: number[] = [];
+  private len: number = 0;
+  private max: number = 0;
+  private sort: number[] = [];
   private cs: ICountingSort;
 
   constructor(cs: ICountingSort) {
-    this.arr = [];
-    this.len = 0;
-    this.max = 0;
-    this.sort = [];
     this.cs = cs;
   }
 
@@ -32,6 +26,3 @@ export default class RadixSort {
     return this.sort;
   }
 }
-
-const cs = new CountingSort()
-const rdx = new RadixSort(cs);
